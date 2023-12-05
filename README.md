@@ -1,5 +1,5 @@
 # Bert-on-Automatic-Assignment
-We make attempt to conduct Bert on Automatic Bug Assignment. In our experiment, Automatic Bug assignment problem is treated as a classification problem, and descriptions of reports are inputted to the classifier, Bert. Although Bert is widely regarded as an advanced technique, results seem disappointed. Maybe we miss use Bert or the model requires delicate reform for Automatic Bug Assignment. We record our present code and datasets in this repository. If there are sometime wrong, we would revise it. Besides, we also make guesses on the disappointed results.
+We make attempt to conduct Bert on Automatic Bug Assignment. In our experiment, Automatic Bug assignment problem is treated as a classification problem, and descriptions of reports are inputted to the classifier, Bert. Although Bert is widely regarded as an advanced technique, results seem disappointed. Maybe the model requires delicate reform for Automatic Bug Assignment. We record our present code and datasets in this repository. Besides, we also make guesses on the disappointed results.
 
 # Fine-tune
 We reload Bert by Python package ``transformers'' with:
@@ -25,8 +25,8 @@ The whole source code can be found in [source/Transformer.py](./source/Transform
 # Results
 | Project | SHIRO | PDFBOX | LUCENE | HBASE | CASSANDRA |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Train |  |  |  |  |  |
-| Test |  |  |  |  |  |
+| Train | 63.33% | 66.25% | 57.40% | 33.82% | 23.25% |
+| Test | 43.48% | 44.27% | 48.61% | 23.17% | 17.04% |
 
 In our training process, accuracies get continuous improvements (losses continuous decrease) until losses in test increase abnormal. But the strange thing is that the accuracies in test neither increase nor decrease. In other words, the performance of Bert model on test datasets remains unchanged, although the model has been fine-tuned by our dataset.
 
