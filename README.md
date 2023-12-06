@@ -25,8 +25,8 @@ The whole source code can be found in [source/Transformer.py](./source/Transform
 # Results
 | Project | SHIRO | PDFBOX | LUCENE | HBASE | CASSANDRA |
 | :-: | :-: | :-: | :-: | :-: | :-: |
-| Train | 63.33% | 66.25% | 57.40% | 33.82% | 23.25% |
-| Test | 43.48% | 44.27% | 48.61% | 23.17% | 17.04% |
+| Train | 63.33% | 66.25% | 66.74% | 23.74% | 23.25% |
+| Test | 43.48% | 44.27% | 32.71% | 18.17% | 17.04% |
 
 In our training process, accuracies get continuous improvements (losses continuous decrease) until losses in test increase abnormal. But the strange thing is that the accuracies in test neither increase nor decrease. In other words, the performance of Bert model on test datasets remains unchanged, although the model has been fine-tuned by our dataset.
 
